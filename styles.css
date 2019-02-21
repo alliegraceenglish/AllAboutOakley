@@ -1,0 +1,49 @@
+/* Base Styles */
+
+h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 65pt;
+}
+
+h3 {
+  color: darkslategray;
+  font-family: 'Covered By Your Grace', cursive;
+  color: cornflowerblue;
+}
+
+p {
+  color: slategray;
+}
+
+.intro {
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.profile {
+  display: block;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.intro {
+  padding: 30px;
+}
+
+.button {
+  text-align: center;
+  padding: 30px;
+}
+
+.oak1 {
+  width: 300px;
+  height: 400px;
+}
+
+/* Media Queries */
