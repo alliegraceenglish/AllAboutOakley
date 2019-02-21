@@ -26,10 +26,13 @@ p {
 }
 
 .profile {
-  display: block;
   border-radius: 50%;
+  display: block;
   max-width: 100%;
-  height: auto;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
 }
 
 .intro {
