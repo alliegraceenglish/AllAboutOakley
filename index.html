@@ -2,73 +2,108 @@
 <html lang="en-US">
   <head>
     <title>All About Oakley</title>
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Shadows+Into+Light+Two" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <header>
-    <img src="images/profile.jpg" class="profile">
-    <h1>All About Oakley</h1>
+    <img src="images/profile.jpg" alt="black and tan dog"class="profile">
+    <h1 id="title">All About Oakley</h1>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#typical-day">Typical Day</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#people">Her People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#toys">Favorite Toys</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#hobbies">Hobbies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#typical-day">Typical Day</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#people">Her People</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#toys">Favorite Toys</a>
-      </li>
-    </ul>
-  </nav>
 
   <body>
 
     <div class = "content-wrapper">
 
-      <!-- Slider of images -->
-      <div class = "carousel">
-      <img>
+      <!-- Carousel -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images  -->
+        <div class="mySlides fade">
+          <img src="images/baby_oak.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/oak1.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/profile.jpg" style="width:50%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
+      <!-- Quote -->
+      <div class="quote">
+        <p>"His name is not Wild Dog any more, but the First Friend, because he will be our friend for always and always and always." <br>
+          - Rudyard Kipling</p>
+      </div>
       <!-- Intro paragraph -->
       <div class = "intro">
         <p>This is a site all about Oakley the Beaglier!</p>
-        <p>Oakley is a 5 year old black and tan beaglier - a Beagle and Cavlier King Charles mix. She was born in Nashville, Tennessee, and
-        came to be a part of her forever home in 2013. Oakley is funny, snuggly, and super cute.</p>
+        <p>Oakley is a 5 year old black and tan beaglier - a Beagle and Cavlier King Charles mix. She was outside of Nashville, Tennessee, and
+        came to be a part of her forever home in 2013. Oakley is funny, snuggly, and super cute. The more you know her, the more you're sure to love her!</p>
       </div>
 
       <div class="container">
         <div class="row">
 
-          <div class="col-sm">
+          <div class="col-md">
             <!-- About Oakley paragraph -->
             <div id="about">
               <h3>About Oakley</h3>
-              <img>
-              <p>Oakley is the best Beaglier ever! She is a five years old black and tan Beaglier who loves people. Oakley is very friendly
-              and loves other dogs and people. She loves snuggling more than almost anything, and she is always down to cuddle.</p>
+              <img src="images/baby_oak.jpg" alt="black and brown puppy" class="baby_oak" align="left">
+              <p>Oakley is the best Beaglier ever! She is a five-year-old black and tan Beaglier who loves people. Oakley is very friendly
+              and loves other dogs and people. She loves snuggling more than almost anything, and she is always down to cuddle. Oakley is also
+              a big fan of food and treats, epecially ice! Overall, Oakley has a wonderful temperment and is truly one of the best friends anyone
+              could have.</p>
             </div>
 
             <!-- Hobbies paragraph -->
             <div id="hobbies">
               <h3>Hobbies</h3>
-              <p>Oakley has a variety of hobbies. She loves to chew bones, play fetch, and get involved in an intense game of tug of war.
-              When it comes to playing fetch, her red squeaky ball is her favorite.</p>
+              <p>Oakley has a variety of hobbies. She loves to chew bones, play fetch, and get involved in an intense game of tug-of-war.
+              When it comes to playing fetch, her red squeaky ball is her favorite, but her ropes are perfect for playing tug-of-war. Oakley
+              also loves sleeping. She can nap just about anywhere whether it's the master bed, the guest bed, her doggie bed, or even the floor.
+              Oakley enjoys going for walks where she can meet other dogs and people. When the weather is warm she enjoys going to the dog park,
+              but she's usually more interested in the people rather than the other dogs. She is always so excited when she can get pets from new friends!</p>
             </div>
           </div>
 
-          <div class="col-sm">
+          <div class="col-md">
             <!-- A typical day -->
             <div id="typical-day">
               <h3>A Typical Day</h3>
@@ -76,13 +111,13 @@
               so she usually gets down to taking care of business pretty quickly. After her outdoor excursion, Oakley helps herself to a big bowl
               of her favorite dog food. After breakfast, Oakley typically enjoys a nice long drink and does some exploring around the house. Once she's
               satisfied everything is safe and sound, Oakley might go back to sleep on her special blanket if her humans are still around.</p>
-              <p>Sometimes Oakley spends the day at her favorite doggie day care where she gets to play with all her puppy and people friends</p>
+              <p>Sometimes Oakley spends the day at her favorite doggie day care where she gets to play with all her puppy and people friends.</p>
             </div>
 
             <!-- Her people -->
             <div id="people">
               <h3>Her People</h3>
-              <img>
+              <img src="images/people.jpg" alt="man and woman standing" class="people" align="left">
               <p>Oakley's people are Mason and Allie English. She thinks they're pretty great! Mason and Allie got Oakley when they were in school,
               and the day they got married and the whole family moved in together was one of Oakley's favorites. Right now Mason is in school to
               be a doctor. He studies a lot and works really hard. Allie has a neat job and is learning all about business. They really love Oakley,
@@ -96,6 +131,34 @@
       <div id="toys" class = "box">
         <h3>Oakley's Favorite Toys</h3>
         <p>These are some of her favorite toys!</p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/ball.jpg" alt="red dog ball" class="card-img-top" alt="bright red ball">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/frog.jpg" alt="green dog toy" class="card-img-top" alt="bright green dog toy">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+          </div>
+        </div>
       </div>
 
       <!-- Download an Oakley wallpaper button -->
@@ -104,9 +167,10 @@
       </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 
   <footer>
